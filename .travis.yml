@@ -11,7 +11,7 @@
       "mvn clean install"
   ],
   "before_install": [
-      "- chmod +x mvnw"
+      "- chmod +x"
   ]
 
 }
