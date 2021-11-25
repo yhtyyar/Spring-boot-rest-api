@@ -26,4 +26,28 @@ public class Overlord {
 
     @OneToMany(mappedBy = "overlord", cascade = CascadeType.ALL)
     private List<Planet> planetList;
+
+    @Override
+    public String toString() {
+
+        StringBuilder planetBuilder = new StringBuilder();
+
+        if (planetList == null || planetList.isEmpty()) {
+            return "ID: " + id +
+                    ", Имя: " + name  +
+                    ", Возраст: " + age +
+                    ", Не владеет планетами";
+        } else {
+
+            for (Planet planet : planetList) {
+                planetBuilder.append(planet.getName()).append(", ");
+            }
+
+            return "ID: " + id +
+                    ", Имя: " + name  +
+                    ", Возраст: " + age +
+                    ", Владеет Планетами: " + planetBuilder;
+        }
+
+    }
 }

@@ -7,7 +7,7 @@
   "jdk": [
       "-openjdk17"
   ],
-  "sudo": "true",
+  "sudo": true,
   "script": [
       "mvn clean install"
   ],

@@ -1,4 +1,4 @@
-package com.example.Springbootrestapi.rest;
+package com.example.Springbootrestapi.rest.v1;
 
 import com.example.Springbootrestapi.dto.PlanetDto;
 import com.example.Springbootrestapi.model.Planet;
@@ -16,16 +16,13 @@ public class PlanetRestControllerV1 {
 
     private final PlanetServiceImpl planetService;
 
-    @GetMapping("/")
-    public String planets() {
-        return "planets";
-    }
 
     @PostMapping
     public ResponseEntity<?> addNewPlanet(@RequestBody @NonNull PlanetDto planetDto) {
         Planet createdPlanet = planetService.addNewPlanet(planetDto.toEntity());
         return  new ResponseEntity<>(PlanetDto.fromEntity(createdPlanet), HttpStatus.CREATED);
     }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> destroyPlanet(@PathVariable ("id") Long id) {

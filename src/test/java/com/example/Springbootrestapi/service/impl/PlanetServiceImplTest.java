@@ -3,7 +3,6 @@ package com.example.Springbootrestapi.service.impl;
 import com.example.Springbootrestapi.model.Planet;
 import com.example.Springbootrestapi.repository.PlanetRepository;
 import com.example.Springbootrestapi.service.PlanetService;
-import com.example.Springbootrestapi.service.impl.PlanetServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
