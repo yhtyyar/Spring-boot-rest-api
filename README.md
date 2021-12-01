@@ -46,4 +46,4 @@
 Тест для проверки функционала этого проекта https://github.com/yhtyyar/Test_For_Spring_Boot_Rest_Api_Project
 
 
-## Технологии: Java 17, Spring Boot, PostgresSQL, Flyway, Lombok 
+## Технологии: Java 17, Spring Boot, PostgresSQL, Flyway, Lombok, Maven 
